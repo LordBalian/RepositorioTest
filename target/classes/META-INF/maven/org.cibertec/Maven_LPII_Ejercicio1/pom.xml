@@ -1,0 +1,38 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.cibertec</groupId>
+  <artifactId>Maven_LPII_Ejercicio1</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>MV_Ejercicio1</name>
+  <description>Aplicacion Maven con Java</description>
+  
+  <!--Aveces salen errores, puede ser normal, ya que esto puede variar de maquina en maquina, o por un problema del mismo archivo, pero igual funciona, no?-->
+  <!--Esta parte esta agregada por nosotros, para colocar la version de Java que usamos -->
+	<properties>
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
+	</properties>
+	
+	<dependencies> <!--https://central.sonatype.com/ -> Es el lugar para descargar las dependencias de Maven. Aca colocamos las dependencias descargadas de la pagina-->
+		<dependency> <!--Esta dependencia es de MySQL para conectarnos a la BD-->
+		    <groupId>mysql</groupId>
+		    <artifactId>mysql-connector-java</artifactId>
+		    <version>8.0.33</version>
+		</dependency>
+		<dependency> <!--Esta dependencia es de APACHE-->
+		    <groupId>org.apache.poi</groupId>
+		    <artifactId>poi</artifactId>
+		    <version>5.4.1</version>
+		</dependency>
+		<dependency> <!--Esta dependencia es de APACHE y archivos XML-->
+		    <groupId>org.apache.poi</groupId>
+		    <artifactId>poi-ooxml</artifactId>
+		    <version>5.4.1</version>
+		</dependency>
+		<dependency> <!--Esta dependencia es de Lombok, con esta libreria podemos acortar y simplificar el codigo-->
+		    <groupId>org.projectlombok</groupId>
+		    <artifactId>lombok</artifactId>
+		    <version>1.18.38</version>
+		</dependency>
+	</dependencies>
+</project>
